@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(20, 20, 57)
+}
+a{
+    color:#fff;
+    text-decoration: none;
+}
+.menu-bar{
+    text-transform: uppercase;
+    display:flex;
+    position: fixed;
+    left: 0;
+    right: 0;
+    padding: 25px 9%;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.menu-bar .logo{
+    font-size: 30px;
+    font-weight: 700;
+    color: rgb(179, 170, 243);
+}
+.menu-bar ul{
+    display: flex;
+}
+.menu-bar ul li{
+    list-style: none;
+    margin-left: 35px;
+}
+.menu-bar ul li a{
+    font-size: 20px;
+    font-weight: 500;
+    transition: .5s;
+}
+
+.menu-bar ul :hover a,
+.menu-bar ul li.active a {
+    color: rgb(13, 236, 13);
+}
+.profile-section{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    padding: 60px 9% 0;
+    color: #fff;
+}
+.profile-text h1{
+    font-size: 55px;
+    color: rgb(54, 150, 150);
+}
+.profile-text h2{
+    font-size:32px;
+    color: rgb(121, 66, 173);
+    margin-top: -10px;
+}
+.profile-text p{
+    font-size: 16px;
+    margin: 10px 0 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.profile-text .btn-sci{
+    display: flex;
+    align-items: center;
+}
+
+.btn{
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: #7cf03d;
+    border: 2px solid #7cf03d;
+    border-radius: 40px;
+    box-shadow: 0 0 10px #7cf03d;
+    font-size: 16px;
+    color: #1f242d;
+    font-weight: 600;
+    transition: .5s;
+}
+.btn:hover{
+    background: transparent;
+    color: #7cf03d;
+    box-shadow: none;
+
+}
+
+.profile-text .btn-sci .sci{
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.profile-text .btn-sci .sci a{
+    display: inline-flex;
+    padding: 8px;
+    border: 2px solid #7cf03d;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #7cf03d;
+    margin: 0 8px;
+    transition: .5s;
+}
+.profile-text .btn-sci .sci a:hover{
+    background-color: #7cf03d;
+    color: #1f242d;
+    box-shadow: 0 0 10px #7cf03d;
+}
+
+
+.home-img .img-box{
+    width: 32vw;
+    height:32vw;
+    background-color: rgb(210, 40, 40);
+    border-radius: 50%;
+    padding: 5px solid rgb(52, 52, 115);
+
+}
+.home-img .img-box .img-item{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: rgb(52, 52, 115);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+.home-img .img-box .img-item img{
+    position: absolute;
+    display: block;
+    width: 85%;
+    top: 30px;
+    object-fit: cover;
+}
